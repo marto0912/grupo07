@@ -33,7 +33,9 @@ body{
 /* ESTILOS HEADER */
 header{
     flex-direction: column;
-    background-color: var(--fucsiaoscuro);
+    background-image: url("../img/header-h.png");
+    background-size:cover;
+    background-repeat: no-repeat;
     padding-top: 0px;
     padding-bottom: 0em;
     font-weight: 500;
