@@ -1,0 +1,127 @@
+:root {
+        --blanco: #ffffff;
+        --gris:#E6E6E6;
+        --fucsia: #f34070;
+        --fucsiaoscuro: #e71752 ;
+        --amarillo: #d7f205;
+        --naranja: #f29441;
+        --rosa: #f24b4b;
+
+}
+/* estilos generales  */
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+body{
+    background-color: var(--amarillo);
+    display: flex;
+    flex-direction: column;
+}
+.content{
+    flex: 1;
+}
+/* ESTILOS HEADER */
+.contenedor{
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+/* ESTILOS HEADER */
+header{
+    flex-direction: column;
+    background-color: var(--fucsiaoscuro);
+    padding-top: 0px;
+    padding-bottom: 0em;
+    font-weight: 500;
+    color: var(--naranja);
+    justify-content:right;
+}
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* MENU HAMBURGUESA */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+  @media (max-width: 950px) {
+    .contenedor{
+        width: 100%;
+        margin: auto;
+        display:flex;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+
+    }
+    .menu_lista {
+        display:none;
+        position: absolute;
+        background-color:var(--fucsiaoscuro);
+        right: 0;
+        text-align: right;
+        padding: 50px 0;
+        flex-direction: column;
+        width: 15em;
+      }
+      .menu_lista li:hover {
+        display: inline-block;
+        transition: 0.3s ease;
+      }
+      .menu_lista li + li {
+        margin-top: 32px;
+      }
+    
+      input[type=checkbox]:checked ~ .menu_lista {
+        display: block;
+        
+      }
+    
+      .hamburger {
+        display: block;
+        padding-right: 1em;
+        
+      }
+}
+nav{
+    display: flex;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}  
+header li {
+    display: inline-block;
+}
+#logo{
+    padding-top: 15px;
+    padding-left:10px;
+    float: left;
+
+}
+header a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    padding: 30px 15px 26px;
+}
+header a:hover{
+    color: var(--amarillo);
+    font-weight: 500;
+
+}
+.resaltado{
+    color: var(--azuloscuro);
+}
+.resaltado_cursiva{
+    color: var(--azuloscuro);
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+}
