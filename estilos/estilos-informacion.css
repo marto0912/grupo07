@@ -59,10 +59,18 @@ body {
     margin-left: 10px;
     font-weight: bolder;
     color:#f7fbd7;
-    text-decoration: underline;
 
 }
-
+.brand {
+    text-align: center;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+  }
+  
+  .brand span {
+    color: var(--blanco);
+  }
 @media only screen and (max-width: 768px) {
     #ubi{
         display: flex;
