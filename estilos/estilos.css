@@ -1,46 +1,31 @@
 :root {
-        --blanco: #ffffff;
-        --gris:#E6E6E6;
-        --fucsia: #f34070;
-        --fucsiaoscuro: #e71752 ;
-        --amarillo: #d7f205;
-        --naranja: #f29441;
-        --rosa: #f24b4b;
+    --rosa: #f22e62;
+    --fuccia: #b5224c;
+    --fucsiaoscuro: #e71752 ;
+    --amarillo: #d7f205;
+    --naranja: #F29441;
+    --coral: #f24b4b;
 
 }
-/* estilos generales  */
-*{
-    font-family: 'Montserrat', sans-serif;
+
+* {
+    font-family: 'Oswald', sans-serif;
     margin: 0;
-}
-body{
-    background-color: var(--amarillo);
-    display: flex;
-    flex-direction: column;
-}
-.content{
-    flex: 1;
-}
-/* ESTILOS HEADER */
-.contenedor{
-    width: 100%;
-    margin: auto;
-    display:flex;
-    flex-direction: column;
-    -webkit-flex-direction: column;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    
 }
 
-/* ESTILOS HEADER */
-header{
-    flex-direction: column;
+header {
+    background-color: #f24b4b;
+    position: relative;
+    padding-bottom: 25px;
+    margin-right: 0;
     background-image: url("../img/header-h.png");
     background-size:cover;
     background-repeat: no-repeat;
-    padding-top: 0px;
-    padding-bottom: 0em;
-    font-weight: 500;
-    color: var(--naranja);
-    justify-content:right;
 }
 input[type=checkbox] {
     display: none;
@@ -51,25 +36,249 @@ input[type=checkbox] {
     display: none;
     font-size: 24px;
     user-select: none;
+    color: #ffffff;
   }
-  @media (max-width: 950px) {
-    .contenedor{
-        width: 100%;
-        margin: auto;
-        display:flex;
-        flex-direction: row;
-        -webkit-flex-direction: row;
+.logo {
+    padding-left: 15px;
+}
+
+header li {
+    display: inline;
+    padding: 0px 0px;
+    float: left;
+    margin-top: 15px;
+    font-variant: small-caps;
+
+}
+
+header a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+
+    padding: 30px 20px 20px;
+}
+
+header a:hover {
+    color: #d7f205;
+    font-weight: 600;
+    background-color: #d6f20534;
+    margin: 5px;
+
+}
+
+body {
+    background-image: url(../img/fondo2.jpg);
+}
+
+
+.fondo {
+    width: 1800px;
+
+}
+
+#titulo{
+    display: flex;
+    font-family:Helvetica ;
+    color: #ffffff;
+    font-size:35px;
+    margin-top: 20px;
+    justify-content: center;
+    font-weight: 700;
+    font-style: italic;
+}
+#descripcion{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size:30px;
+    margin-top: 5px;
+    justify-content: center;
+    font-weight: 700;
+    font-style:oblique;
+}
+#descripcion-lugar{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size:15px;
+    margin-top: 5px;
+    justify-content: center;
+    font-weight: 700;
+    font-style:oblique;
+}
+#logo{
+    padding-top: 20px;
+    padding-left:80px;
+    float: left;
+
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.contenedor-lineup{
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items:center;
+    justify-content:center;
+    margin: 0px;
+}
+.inicioimg{
+    margin-left: 35px;
+
+}
+.bresh{
+    float: right;
+}
+.lineup {
+    width: 600px;
+    float: center;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+#entradas {
+    background-color: #13140bc2;
+    padding: 15px;
+    min-height: 30px;
+}
+#entradas h3 {
+    font-size: 15px;
+    color: antiquewhite;
+}
+#entradas p {
+    font-size: 12px;
+    color: antiquewhite;
+}
+#newsletter {
+    background-color: #d6f20564;
+    padding: 15px;
+    min-height: 30px;
+}
+#newsletter h3 {
+    float: left;
+    font-size: 25px;
+    color: antiquewhite;
+    font-style: oblique;
+}
+
+#newsletter form {
+    float: right;
+    line-height: 25px;
+}
+
+#newsletter input {
+    padding: 4px;
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+.btn {
+    background-color: #F7DCC3;
+    height: 25PX;
+    border: 40px;
+    padding: 0px 20px;
+    color: #020202;
+    border-radius: 5px;
+
+}
+
+.btn:hover {
+    background-color: #b5224c;
+    
+}
+
+
+#footer {
+    min-height: 70px;
+    margin-top: 10px;
+    background-color: var(--amarillo);
+    width: 100%;
+    position: unset;
+    clear: both;
+    padding-top: 50px;
+    overflow: auto;
+}
+
+@media only screen and (max-width: 900px) {
+
+    header {
+        padding-bottom: 30px;
+    }
+    .bresh{
+        display: none;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
 
     }
+    .lineup h3{
+        float: center;
+    }
+    header h1 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    header li {
+        padding: 0px 0px;
+    }
+
+    header a {
+        padding: 10px 10px;
+        
+    }
+    #titulo{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    
+    }
+    .contenedor{
+        float: none;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
+ 
+   footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+   
+    }
+    #footer{
+        width: 100%;
+    }
+    
+}
+input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* MENU HAMBURGUESA */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    user-select: none;
+    padding-left: 15px;;
+    
+  }
+  @media (max-width: 768px) {
     .menu_lista {
         display:none;
         position: absolute;
-        background-color:var(--fucsiaoscuro);
-        right: 0;
-        text-align: right;
-        padding: 50px 0;
+        background-color:#fd2053;
+        text-align: left;
+        padding: 75px 0;
         flex-direction: column;
-        width: 15em;
+        width: 10em;
       }
       .menu_lista li:hover {
         display: inline-block;
@@ -92,38 +301,12 @@ input[type=checkbox] {
 }
 nav{
     display: flex;
-    float: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    align-items: center;
+    float: right;
+    margin-top: 25px;
 
 }  
 header li {
     display: inline-block;
-}
-#logo{
-    padding-top: 15px;
-    padding-left:10px;
-    float: left;
-
-}
-header a{
-    color: var(--blanco);
-    text-decoration: none;
-    font-size: 15px;
-    text-transform: uppercase;
-
-    padding: 30px 15px 26px;
-}
-header a:hover{
-    color: var(--amarillo);
-    font-weight: 500;
-
-}
-.resaltado{
-    color: var(--azuloscuro);
-}
-.resaltado_cursiva{
-    color: var(--azuloscuro);
-    font-family: 'Caveat', cursive;
-    font-size: 1.5em;
+    padding: 0px 20px;
 }
