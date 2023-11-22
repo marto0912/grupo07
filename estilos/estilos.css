@@ -67,9 +67,15 @@ header a:hover {
     margin: 5px;
 
 }
-
+#contenedor-pagina{
+    position: relative;
+    min-height: 90vh;
+}
 body {
     background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+
 }
 
 
@@ -107,6 +113,11 @@ body {
     justify-content: center;
     font-weight: 700;
     font-style:oblique;
+}
+#descripcion-lugar a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
 }
 #logo{
     padding-top: 20px;
@@ -147,17 +158,19 @@ body {
     min-height: 30px;
 }
 #entradas h3 {
-    font-size: 15px;
+    font-size: 20px;
     color: antiquewhite;
 }
 #entradas p {
-    font-size: 12px;
+    font-size: 15px;
     color: antiquewhite;
 }
 #newsletter {
+    
     background-color: #d6f20564;
     padding: 15px;
     min-height: 30px;
+
 }
 #newsletter h3 {
     float: left;
@@ -191,7 +204,28 @@ body {
     background-color: #b5224c;
     
 }
-
+.boton-tickets {
+    justify-content: center;
+    background: var(--naranja);
+    border-radius: 999px;
+    box-shadow: var(--fucsiaoscuro)0 10px 20px -10px;
+    box-sizing: var(--naranja);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin: 20px;
+  }
 
 #footer {
     min-height: 70px;
